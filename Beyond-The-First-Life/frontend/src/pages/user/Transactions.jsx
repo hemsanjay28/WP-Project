@@ -1,0 +1,4 @@
+import React from "react";
+import { useEffect,useState } from "react";
+import api from "../../api";
+export default function Transactions(){const [t,setT]=useState([]);useEffect(()=>{api.get("/transactions").then(r=>setT(r.data))},[]);return <div className="content"><div className="page-heading"><div><span className="kicker">SETTLEMENT LEDGER</span><h1>Transactions</h1></div></div><div className="card"><table className="table"><thead><tr><th>ID</th><th>Battery</th><th>Buyer</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead><tbody>{t.map(x=><tr key={x.id}><td>{x.id}</td><td>{x.batteryId}</td><td>{x.buyer}</td><td>₹{x.amount.toLocaleString()}</td><td><span className={`pill ${x.status==="Completed"?"good":"fair"}`}>{x.status}</span></td><td>{x.date}</td></tr>)}</tbody></table></div></div>}

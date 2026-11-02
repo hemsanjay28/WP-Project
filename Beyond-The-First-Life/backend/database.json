@@ -1,0 +1,238 @@
+{
+  "users": [
+    {
+      "id": "u-demo",
+      "name": "GreenFleet Co.",
+      "email": "dealer@beyondlife.demo",
+      "passwordHash": "$2a$10$8g8r29n70IGI/lUEpsg3PO8OHPu8sDEYXe479Ofb6slbw1MnazV2C",
+      "role": "user",
+      "company": "GreenFleet Co.",
+      "location": "Coimbatore"
+    },
+    {
+      "id": "a-demo",
+      "name": "Platform Admin",
+      "email": "admin@beyondlife.demo",
+      "passwordHash": "$2a$10$ICLUpZyK10UBxWvys6ySSuj7xmBCDuIwmdGyW/ilWEfW/qkCcluWO",
+      "role": "admin",
+      "company": "Beyond The First Life",
+      "location": "India"
+    }
+  ],
+  "batteries": [
+    {
+      "id": "BAT-CSV-1791509565714-3831",
+      "ownerId": "a-demo",
+      "chemistry": "LFP",
+      "soh": 92,
+      "voltage": 51.2,
+      "capacity": 100,
+      "age": 1,
+      "cycles": 150,
+      "temperature": 25,
+      "status": "GOOD",
+      "price": 20000,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-09T01:32:45.714Z"
+    },
+    {
+      "id": "BAT-CSV-1791504115334-3908",
+      "ownerId": "u-demo",
+      "chemistry": "LFP",
+      "soh": 92,
+      "voltage": 51.2,
+      "capacity": 100,
+      "age": 1,
+      "cycles": 150,
+      "temperature": 25,
+      "status": "GOOD",
+      "price": 20000,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-09T00:01:55.334Z"
+    },
+    {
+      "id": "BAT-CSV-1791502312812-3478",
+      "ownerId": "u-demo",
+      "chemistry": "LFP",
+      "soh": 92,
+      "voltage": 51.2,
+      "capacity": 100,
+      "age": 1,
+      "cycles": 150,
+      "temperature": 25,
+      "status": "GOOD",
+      "price": 20000,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-08T23:31:52.812Z"
+    },
+    {
+      "id": "BAT-CSV-1791485700965-6007",
+      "ownerId": "u-1791484621290-6678",
+      "chemistry": "NMC",
+      "soh": 88,
+      "voltage": 48,
+      "capacity": 45,
+      "age": 2,
+      "cycles": 320,
+      "temperature": 29,
+      "status": "GOOD",
+      "price": 17300,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-08T18:55:00.965Z"
+    },
+    {
+      "id": "BAT-2024-001",
+      "ownerId": "u-demo",
+      "chemistry": "NMC",
+      "soh": 82,
+      "voltage": 48,
+      "capacity": 42,
+      "age": 3,
+      "cycles": 820,
+      "temperature": 31,
+      "status": "GOOD",
+      "price": 18400,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-08T18:51:51.952Z"
+    },
+    {
+      "id": "BAT-2024-002",
+      "ownerId": "u-demo",
+      "chemistry": "LFP",
+      "soh": 63,
+      "voltage": 48,
+      "capacity": 50,
+      "age": 4,
+      "cycles": 1240,
+      "temperature": 34,
+      "status": "FAIR",
+      "price": 11200,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-08T18:51:51.953Z"
+    },
+    {
+      "id": "BAT-2024-003",
+      "ownerId": "u-demo",
+      "chemistry": "LFP",
+      "soh": 35,
+      "voltage": 48,
+      "capacity": 45,
+      "age": 6,
+      "cycles": 2100,
+      "temperature": 39,
+      "status": "RECYCLE",
+      "price": 3100,
+      "location": "Coimbatore",
+      "createdAt": "2026-10-08T18:51:51.953Z"
+    }
+  ],
+  "transactions": [],
+  "integrations": [
+    {
+      "id": "pulse",
+      "name": "Pulse Energy",
+      "type": "Fleet Platform",
+      "status": "Connected",
+      "lastSync": "Just now",
+      "batteriesSynced": 925,
+      "uptime": 99.8
+    }
+  ],
+  "marketplace": [
+    {
+      "id": "m1",
+      "batteryId": "BAT-2024-001",
+      "application": "Residential Solar Backup",
+      "buyer": "SolarTech Pvt Ltd",
+      "distance": 4.2,
+      "match": 92,
+      "offer": 18400,
+      "demand": "High",
+      "status": "Available"
+    }
+  ],
+  "activity": [
+    {
+      "id": 1791509565715,
+      "text": "BAT-CSV-1791509565714-3831 uploaded securely via CSV at 92% SOH",
+      "time": "just now",
+      "type": "scan"
+    },
+    {
+      "id": 1791504115334,
+      "text": "BAT-CSV-1791504115334-3908 uploaded securely via CSV at 92% SOH",
+      "time": "just now",
+      "type": "scan"
+    },
+    {
+      "id": 1791502312812,
+      "text": "BAT-CSV-1791502312812-3478 uploaded securely via CSV at 92% SOH",
+      "time": "just now",
+      "type": "scan"
+    },
+    {
+      "id": 1791489463358,
+      "text": "Pulse Energy synced 285 fleet batteries",
+      "time": "just now",
+      "type": "api"
+    },
+    {
+      "id": 1791489462299,
+      "text": "Pulse Energy synced 193 fleet batteries",
+      "time": "just now",
+      "type": "api"
+    },
+    {
+      "id": 1791489456750,
+      "text": "Pulse Energy synced 263 fleet batteries",
+      "time": "just now",
+      "type": "api"
+    },
+    {
+      "id": 1791489437568,
+      "text": "ZKP verification passed for BAT-2024-001",
+      "time": "just now",
+      "type": "zkp"
+    },
+    {
+      "id": 1791489435104,
+      "text": "ZKP verification passed for BAT-2024-001",
+      "time": "just now",
+      "type": "zkp"
+    },
+    {
+      "id": 1791485700965,
+      "text": "BAT-CSV-1791485700965-6007 uploaded securely via CSV at 88% SOH",
+      "time": "just now",
+      "type": "scan"
+    },
+    {
+      "id": 1,
+      "text": "System initialized with database.",
+      "time": "Just now",
+      "type": "api"
+    }
+  ],
+  "zkpHistory": [
+    {
+      "id": "ZKP-1791489437568-2904",
+      "batteryId": "BAT-2024-001",
+      "soh": 82,
+      "threshold": 70,
+      "result": "VERIFIED",
+      "proof": "zkp_QkFULTIwMjQtMDAxOjgyOjE3OTE0",
+      "timestamp": "2026-10-08T19:57:17.568Z",
+      "verifier": "Platform User"
+    },
+    {
+      "id": "ZKP-1791489435104-9811",
+      "batteryId": "BAT-2024-001",
+      "soh": 82,
+      "threshold": 70,
+      "result": "VERIFIED",
+      "proof": "zkp_QkFULTIwMjQtMDAxOjgyOjE3OTE0",
+      "timestamp": "2026-10-08T19:57:15.104Z",
+      "verifier": "Platform User"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import React from "react";
+import { useEffect,useState } from "react";
+import api from "../../api";
+export default function Batteries(){const [b,setB]=useState([]);useEffect(()=>{api.get("/admin/all-batteries").then(r=>setB(r.data))},[]);return <div className="content"><div className="page-heading"><div><span className="kicker">GLOBAL INVENTORY</span><h1>All Batteries</h1></div></div><div className="card"><table className="table"><thead><tr><th>ID</th><th>Owner</th><th>SOH</th><th>Chemistry</th><th>Cycles</th><th>Status</th><th>Value</th></tr></thead><tbody>{(b || []).map(x=><tr key={x.id}><td>{x.id}</td><td>{x.ownerId}</td><td>{x.soh}%</td><td>{x.chemistry}</td><td>{x.cycles}</td><td><span className={`pill ${x.status==="GOOD"?"good":x.status==="FAIR"?"fair":"recycle"}`}>{x.status}</span></td><td>₹{x.price.toLocaleString()}</td></tr>)}</tbody></table></div></div>}

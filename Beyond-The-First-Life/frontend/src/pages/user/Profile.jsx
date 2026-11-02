@@ -1,0 +1,3 @@
+import React from "react";
+import { useAuth } from "../../auth";
+export default function Profile(){const {user}=useAuth();return <div className="content"><div className="page-heading"><div><span className="kicker">ACCOUNT</span><h1>Profile</h1></div></div><div className="card" style={{maxWidth:700}}><div className="passport-grid"><div className="passport-stat"><span>Name</span><strong>{user?.name}</strong></div><div className="passport-stat"><span>Email</span><strong>{user?.email}</strong></div><div className="passport-stat"><span>Company</span><strong>{user?.company}</strong></div><div className="passport-stat"><span>Location</span><strong>{user?.location}</strong></div></div></div></div>}

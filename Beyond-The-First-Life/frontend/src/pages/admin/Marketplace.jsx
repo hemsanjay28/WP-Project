@@ -1,0 +1,4 @@
+import React from "react";
+import { useEffect,useState } from "react";
+import api from "../../api";
+export default function Marketplace(){const [x,setX]=useState([]);useEffect(()=>{api.get("/marketplace").then(r=>setX(r.data))},[]);return <div className="content"><div className="page-heading"><div><span className="kicker">MARKETPLACE CONTROL</span><h1>Marketplace</h1></div></div><div className="three-col">{(x || []).map(m=><div className="card" key={m.id}><div className="match-score">{m.match}% Match</div><h3 style={{fontFamily:"Space Grotesk"}}>{m.application}</h3><div className="muted small">{m.batteryId} • {m.buyer}</div><div style={{display:"flex",justifyContent:"space-between",marginTop:18}}><span>{m.distance} km</span><strong>₹{m.offer.toLocaleString()}</strong></div></div>)}</div></div>}
